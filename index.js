@@ -9,7 +9,7 @@ const publicacion = require('./routes/publicacion');
 
 //importante para la conexion del front con el back
 //uso de cors
-app.use(cors({origin: 'https://vercel.com/yurikt13/equipo-8-jl-ppi-2020'}))
+app.use(cors({origin: '*'}))
 
 
 // Ajustes
