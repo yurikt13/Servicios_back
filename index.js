@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const alarma = require('./routes/alarma');
-const foro = require('./routes/foro');
 const planta = require('./routes/planta');
 const usuario = require('./routes/usuario');
 const publicacion = require('./routes/publicacion');
@@ -21,7 +20,6 @@ app.use(express.json());
 
 //Routes
 app.use('/api', alarma);
-app.use('/api', foro);
 app.use('/api', planta);
 app.use('/api', usuario);
 app.use('/api', publicacion);
